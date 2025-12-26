@@ -1,10 +1,10 @@
 🍃 Calculadora de Emissão de CO₂
 
-Projeto de uma calculadora de emissão de dióxido de carbono desenvolvido para o Bootcamp de GitHub Copilot da DIO.
+Projeto de uma calculadora de emissão de dióxido de carbono desenvolvido para avaliação no Bootcamp de GitHub Copilot da DIO.
 
  📋 Visão Geral
 
-A Calculadora de Emissão de CO₂ é uma aplicação web moderna que permite aos usuários calcular a quantidade de dióxido de carbono emitida em suas viagens, comparar diferentes modos de transporte e descobrir como contribuir para um planeta mais sustentável.
+A Calculadora de Emissão de CO₂ é uma aplicação web que permite aos usuários calcular a quantidade de dióxido de carbono emitida em suas viagens, utilizando e compararando diferentes meios de transporte e descobrir como contribuir para um planeta mais sustentável.
 
 ✨ Funcionalidades Principais
 
