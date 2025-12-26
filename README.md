@@ -1,18 +1,12 @@
-# 🍃 Calculadora de Emissão de CO₂
+🍃 Calculadora de Emissão de CO₂
 
-Um projeto completo de uma calculadora de emissão de dióxido de carbono desenvolvido para o Bootcamp de GitHub Copilot da DIO.
+Projeto de uma calculadora de emissão de dióxido de carbono desenvolvido para o Bootcamp de GitHub Copilot da DIO.
 
-**Languages:** [Português 🇧🇷](#português) | [English 🇺🇸](#english)
-
----
-
-## Português
-
-### 📋 Visão Geral
+ 📋 Visão Geral
 
 A Calculadora de Emissão de CO₂ é uma aplicação web moderna que permite aos usuários calcular a quantidade de dióxido de carbono emitida em suas viagens, comparar diferentes modos de transporte e descobrir como contribuir para um planeta mais sustentável.
 
-### ✨ Funcionalidades Principais
+✨ Funcionalidades Principais
 
 - **Cálculo de Emissões**: Calcule emissões de CO₂ para diferentes modos de transporte
 - **Autopreenchimento de Distância**: Função inteligente que preenche automaticamente a distância entre cidades
@@ -21,7 +15,7 @@ A Calculadora de Emissão de CO₂ é uma aplicação web moderna que permite ao
 - **Estimativa de Preços**: Veja o valor estimado em R$ dos créditos de carbono
 - **Interface Responsiva**: Design moderno e responsivo para desktop e mobile
 
-### 🏗️ Estrutura do Projeto
+ 🏗️ Estrutura do Projeto
 
 ```
 calculadora-carbono/
@@ -38,9 +32,9 @@ calculadora-carbono/
 └── LICENSE                # Licença do projeto
 ```
 
-### 📝 Detalhamento dos Arquivos
+ 📝 Detalhamento dos Arquivos
 
-#### 1. **index.html** - Estrutura Semântica HTML5
+ 1. **index.html** - Estrutura Semântica HTML5
 - **Header**: Título com emoji de folha e subtítulo explicativo
 - **Form Principal** (id="calculator-form"):
   - Inputs de origem e destino com datalist para autocompletar cidades
@@ -55,7 +49,7 @@ calculadora-carbono/
 - **Footer**: Créditos do desenvolvedor
 - **Scripts**: 5 arquivos JavaScript carregados em ordem específica
 
-#### 2. **css/style.css** - Estilos Modernos
+ 2. **css/style.css** - Estilos Modernos
 - **Variáveis CSS**:
   - Paleta eco-friendly (#10b981 primária, #059669 secundária, #34d399 acentuada)
   - Escala de espaçamento (xs até xl: 0.5rem a 3rem)
@@ -73,13 +67,13 @@ calculadora-carbono/
   - Media queries para mobile (max-width: 767px)
   - Media queries para desktop (min-width: 768px)
 
-#### 3. **js/routes-data.js** - Base de Dados de Rotas
+ 3. **js/routes-data.js** - Base de Dados de Rotas
 - **RoutesDB Object** com:
   - 40 rotas populares brasileiras (capitais, regiões)
   - Método `getAllCities()`: retorna lista única e ordenada de cidades
   - Método `findDistance(origin, destination)`: busca distância entre dois pontos
 
-#### 4. **js/config.js** - Configuração e Inicialização
+ 4. **js/config.js** - Configuração e Inicialização
 - **CONFIG Object** contendo:
   - **EMISSION_FACTORS**: fatores de emissão por modo (kg CO₂/km)
     - Bicicleta: 0 kg/km
@@ -92,7 +86,7 @@ calculadora-carbono/
   - **populateDatalist()**: popula datalist com cidades
   - **setupDistanceAutofill()**: setup de autopreenchimento inteligente
 
-#### 5. **js/calculator.js** - Motor de Cálculo
+ 5. **js/calculator.js** - Motor de Cálculo
 - **Calculator Object** com métodos:
   - `calculateEmission()`: calcula emissão para modo/distância
   - `calculateAllModes()`: compara todos os modos
@@ -100,7 +94,7 @@ calculadora-carbono/
   - `calculateCarbonCredits()`: converte kg para créditos
   - `estimateCreditPrice()`: estima preço em R$
 
-#### 6. **js/ui.js** - Gerenciador de UI
+ 6. **js/ui.js** - Gerenciador de UI
 - **Métodos de Utilidade**:
   - `formatNumber()`: formata com locale pt-BR
   - `formatCurrency()`: formata como R$
@@ -115,14 +109,14 @@ calculadora-carbono/
 - **Controle de Estado**:
   - `showLoading/hideLoading()`: gerencia estado de carregamento
 
-#### 7. **js/app.js** - Inicialização e Eventos
+ 7. **js/app.js** - Inicialização e Eventos
 - **DOMContentLoaded**: inicializa aplicação
 - **Submit Handler**: processa formulário com validação
 - **Try-catch**: tratamento de erros
 - **setTimeout**: simula processamento (1500ms)
 - **Renderização**: exibe resultados em sequência
 
-### 🚀 Como Usar
+ 🚀 Como Usar
 
 1. **Abrir a aplicação**: Abra `index.html` em um navegador
 2. **Preencher origem e destino**: Digite cidades brasileiras (autocomplete disponível)
@@ -132,7 +126,7 @@ calculadora-carbono/
 6. **Calcular**: Clique em "Calcular Emissão"
 7. **Ver resultados**: Analise emissões, comparações e créditos de carbono
 
-### 📊 Exemplo de Resultado
+ 📊 Exemplo de Resultado
 
 **Rota**: São Paulo, SP → Rio de Janeiro, RJ
 **Distância**: 430 km
@@ -141,26 +135,26 @@ calculadora-carbono/
 **Economia vs Ônibus**: 19.9% menos emissão
 **Créditos Necessários**: 0.0516 créditos
 
-### 🛠️ Tecnologias Utilizadas
+ 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Semântica e estrutura
 - **CSS3**: Variáveis CSS, Grid, Flexbox, Animações
 - **JavaScript Vanilla**: Sem dependências externas
 - **Locale PT-BR**: Formatação brasileira
 
-### 💻 Requisitos
+ 💻 Requisitos
 
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
+- Navegador (Chrome, Firefox, Safari, Edge)
 - Suporte a ES6+
 - Suporte a CSS Grid e Flexbox
 
-### 📱 Design Responsivo
+ 📱 Design Responsivo
 
 - **Mobile First**: Otimizado para dispositivos móveis
 - **Desktop**: Experiência completa em telas maiores
 - **Acessibilidade**: Estrutura semântica e contraste adequado
 
-### 🎨 Paleta de Cores
+ 🎨 Paleta de Cores
 
 - **Primária**: #10b981 (Verde eco)
 - **Secundária**: #059669 (Verde escuro)
@@ -169,7 +163,7 @@ calculadora-carbono/
 - **Aviso**: #f59e0b (Amarelo)
 - **Info**: #3b82f6 (Azul)
 
-### 📝 Histórico de Desenvolvimento
+ 📝 Histórico de Desenvolvimento
 
 Este projeto foi desenvolvido através de uma série de exchanges de mensagens com GitHub Copilot, documentados neste README (veja seções abaixo).
 
@@ -178,19 +172,19 @@ Produzido por
 Teixeira
 - Bootcamp GitHub Copilot DIO -
 
-### 📄 Licença
+ 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para detalhes.
 
 ---
 
-## English
+ English
 
-### 📋 Overview
+ 📋 Overview
 
 The CO₂ Emissions Calculator is a modern web application that allows users to calculate the amount of carbon dioxide emitted during their trips, compare different transport modes, and discover how to contribute to a more sustainable planet.
 
-### ✨ Key Features
+ ✨ Key Features
 
 - **Emissions Calculation**: Calculate CO₂ emissions for different transport modes
 - **Distance Auto-fill**: Smart function that automatically fills distance between cities
@@ -199,7 +193,7 @@ The CO₂ Emissions Calculator is a modern web application that allows users to 
 - **Price Estimation**: See the estimated value in R$ of carbon credits
 - **Responsive Interface**: Modern and responsive design for desktop and mobile
 
-### 🏗️ Project Structure
+ 🏗️ Project Structure
 
 ```
 calculadora-carbono/
@@ -216,9 +210,9 @@ calculadora-carbono/
 └── LICENSE                # Project license
 ```
 
-### 📝 File Details
+ 📝 File Details
 
-#### 1. **index.html** - Semantic HTML5 Structure
+ 1. **index.html** - Semantic HTML5 Structure
 - **Header**: Title with leaf emoji and explanatory subtitle
 - **Main Form** (id="calculator-form"):
   - Origin and destination inputs with datalist for city autocomplete
@@ -233,7 +227,7 @@ calculadora-carbono/
 - **Footer**: Developer credits
 - **Scripts**: 5 JavaScript files loaded in specific order
 
-#### 2. **css/style.css** - Modern Styles
+ 2. **css/style.css** - Modern Styles
 - **CSS Variables**:
   - Eco-friendly color palette (#10b981 primary, #059669 secondary, #34d399 accent)
   - Spacing scale (xs to xl: 0.5rem to 3rem)
@@ -251,13 +245,13 @@ calculadora-carbono/
   - Media queries for mobile (max-width: 767px)
   - Media queries for desktop (min-width: 768px)
 
-#### 3. **js/routes-data.js** - Routes Database
+ 3. **js/routes-data.js** - Routes Database
 - **RoutesDB Object** with:
   - 40 popular Brazilian routes (capitals, regions)
   - `getAllCities()` method: returns unique and sorted list of cities
   - `findDistance(origin, destination)` method: searches distance between two points
 
-#### 4. **js/config.js** - Configuration and Initialization
+ 4. **js/config.js** - Configuration and Initialization
 - **CONFIG Object** containing:
   - **EMISSION_FACTORS**: emission factors by mode (kg CO₂/km)
     - Bicycle: 0 kg/km
@@ -270,7 +264,7 @@ calculadora-carbono/
   - **populateDatalist()**: populates datalist with cities
   - **setupDistanceAutofill()**: smart auto-fill setup
 
-#### 5. **js/calculator.js** - Calculation Engine
+ 5. **js/calculator.js** - Calculation Engine
 - **Calculator Object** with methods:
   - `calculateEmission()`: calculates emission for mode/distance
   - `calculateAllModes()`: compares all modes
@@ -278,7 +272,7 @@ calculadora-carbono/
   - `calculateCarbonCredits()`: converts kg to credits
   - `estimateCreditPrice()`: estimates price in R$
 
-#### 6. **js/ui.js** - UI Manager
+ 6. **js/ui.js** - UI Manager
 - **Utility Methods**:
   - `formatNumber()`: formats with pt-BR locale
   - `formatCurrency()`: formats as R$
@@ -293,14 +287,14 @@ calculadora-carbono/
 - **State Control**:
   - `showLoading/hideLoading()`: manages loading state
 
-#### 7. **js/app.js** - Initialization and Events
+ 7. **js/app.js** - Initialization and Events
 - **DOMContentLoaded**: initializes application
 - **Submit Handler**: processes form with validation
 - **Try-catch**: error handling
 - **setTimeout**: simulates processing (1500ms)
 - **Rendering**: displays results in sequence
 
-### 🚀 How to Use
+ 🚀 How to Use
 
 1. **Open the application**: Open `index.html` in a modern browser
 2. **Fill origin and destination**: Type Brazilian cities (autocomplete available)
@@ -310,7 +304,7 @@ calculadora-carbono/
 6. **Calculate**: Click "Calculate Emission"
 7. **View results**: Analyze emissions, comparisons, and carbon credits
 
-### 📊 Example Result
+ 📊 Example Result
 
 **Route**: São Paulo, SP → Rio de Janeiro, RJ
 **Distance**: 430 km
@@ -319,26 +313,26 @@ calculadora-carbono/
 **Savings vs Bus**: 19.9% less emission
 **Credits Required**: 0.0516 credits
 
-### 🛠️ Technologies Used
+ 🛠️ Technologies Used
 
 - **HTML5**: Semantic and structure
 - **CSS3**: CSS variables, Grid, Flexbox, Animations
 - **Vanilla JavaScript**: No external dependencies
 - **PT-BR Locale**: Brazilian formatting
 
-### 💻 Requirements
+ 💻 Requirements
 
-- Modern browser (Chrome, Firefox, Safari, Edge)
+- Browser (Chrome, Firefox, Safari, Edge)
 - ES6+ support
 - CSS Grid and Flexbox support
 
-### 📱 Responsive Design
+ 📱 Responsive Design
 
 - **Mobile First**: Optimized for mobile devices
 - **Desktop**: Full experience on larger screens
 - **Accessibility**: Semantic structure and proper contrast
 
-### 🎨 Color Palette
+ 🎨 Color Palette
 
 - **Primary**: #10b981 (Eco green)
 - **Secondary**: #059669 (Dark green)
@@ -347,24 +341,24 @@ calculadora-carbono/
 - **Warning**: #f59e0b (Yellow)
 - **Info**: #3b82f6 (Blue)
 
-### 📝 Development History
+ 📝 Development History
 
 This project was developed through a series of message exchanges with GitHub Copilot, documented in this README (see sections below).
 
-### 👨‍💻 Produzido por
+ 👨‍💻 Produzido por
 
 Teixeira
 - Bootcamp GitHub Copilot DIO
 
-### 📄 License
+ 📄 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
-## 📚 Histórico de Exchanges com GitHub Copilot / Development Exchanges with GitHub Copilot
+ 📚 Histórico de Exchanges com GitHub Copilot / Development Exchanges with GitHub Copilot
 
-### Exchange 1: Estrutura HTML Semântica / Semantic HTML Structure
+ Exchange 1: Estrutura HTML Semântica / Semantic HTML Structure
 
 **Português:**
 Solicitação para criar uma estrutura HTML5 semântica para uma calculadora de CO₂ com:
@@ -394,7 +388,7 @@ Request to create semantic HTML5 structure for a CO₂ calculator with:
 
 ---
 
-### Exchange 2: Estilos CSS Modernos / Modern CSS Styles
+ Exchange 2: Estilos CSS Modernos / Modern CSS Styles
 
 **Português:**
 Solicitação para criar arquivo CSS com:
@@ -418,7 +412,7 @@ Request to create CSS file with:
 
 ---
 
-### Exchange 3: Base de Dados de Rotas / Routes Database
+ Exchange 3: Base de Dados de Rotas / Routes Database
 
 **Português:**
 Criação do objeto global RoutesDB contendo:
@@ -434,7 +428,7 @@ Creation of global RoutesDB object containing:
 
 ---
 
-### Exchange 4: Configuração e Inicialização / Configuration and Initialization
+ Exchange 4: Configuração e Inicialização / Configuration and Initialization
 
 **Português:**
 Criação do objeto CONFIG com:
@@ -454,7 +448,7 @@ Creation of CONFIG object with:
 
 ---
 
-### Exchange 5: Motor de Cálculo / Calculation Engine
+ Exchange 5: Motor de Cálculo / Calculation Engine
 
 **Português:**
 Criação do objeto Calculator com métodos:
@@ -474,7 +468,7 @@ Creation of Calculator object with methods:
 
 ---
 
-### Exchange 6: Gerenciador de UI / UI Manager
+ Exchange 6: Gerenciador de UI / UI Manager
 
 **Português:**
 Criação do objeto UI com métodos:
@@ -490,7 +484,7 @@ Creation of UI object with methods:
 
 ---
 
-### Exchange 7: Inicialização e Eventos / Initialization and Events
+ Exchange 7: Inicialização e Eventos / Initialization and Events
 
 **Português:**
 Criação do arquivo app.js com:
@@ -510,7 +504,7 @@ Creation of app.js file with:
 
 ---
 
-### Exchange 8: Estilos para Conteúdo Dinâmico / Dynamic Content Styles
+ Exchange 8: Estilos para Conteúdo Dinâmico / Dynamic Content Styles
 
 **Português:**
 Adição de estilos CSS para:
@@ -530,7 +524,7 @@ Addition of CSS styles for:
 
 ---
 
-## 🎯 Próximas Melhorias / Future Improvements
+ 🎯 Próximas Melhorias / Future Improvements
 
 - [ ] Adicionar mais rotas brasileiras
 - [ ] Integração com API de distância real
@@ -541,6 +535,5 @@ Addition of CSS styles for:
 
 ---
 
-## 📞 Contato / Contact
 
 Para dúvidas ou sugestões, entre em contato através do repositório GitHub.
